@@ -5,35 +5,54 @@ const imagenes = document.querySelectorAll(".galeria img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const btnClose = document.getElementById("btnClose");
+const btnPrev = document.getElementById("prev");
+const btnNext = document.getElementById("next");
 
-// Recorremos todas las imágenes y asignamos evento de clic
-imagenes.forEach((img) => {
+let indiceActual = 0; // índice de imagen activa
+
+// Abrir lightbox al hacer clic en imagen
+imagenes.forEach((img, index) => {
   img.addEventListener("click", () => {
-    // Mostrar el lightbox
-    lightbox.classList.add("show");
-
-    // Reemplazar src y alt con el de la imagen clickeada
-    lightboxImg.src = img.src;
-    lightboxImg.alt = img.alt;
-
-    // Quitar aria-hidden por accesibilidad
-    lightbox.setAttribute("aria-hidden", "false");
+    mostrarLightbox(index);
   });
 });
 
-// Función para cerrar el lightbox
+function mostrarLightbox(index) {
+  indiceActual = index;
+  lightbox.classList.add("show");
+  lightboxImg.src = imagenes[index].src;
+  lightboxImg.alt = imagenes[index].alt;
+  lightbox.setAttribute("aria-hidden", "false");
+}
+
 function cerrarLightbox() {
   lightbox.classList.remove("show");
   lightboxImg.src = "";
   lightbox.setAttribute("aria-hidden", "true");
 }
 
-// Evento para botón de cerrar
-btnClose.addEventListener("click", cerrarLightbox);
+// Navegar a imagen anterior
+function imagenAnterior() {
+  indiceActual = (indiceActual - 1 + imagenes.length) % imagenes.length;
+  mostrarLightbox(indiceActual);
+}
 
-// También cerrar si se hace clic fuera de la imagen
+// Navegar a imagen siguiente
+function imagenSiguiente() {
+  indiceActual = (indiceActual + 1) % imagenes.length;
+  mostrarLightbox(indiceActual);
+}
+
+// Eventos
+btnClose.addEventListener("click", cerrarLightbox);
+btnPrev.addEventListener("click", (e) => {
+  e.stopPropagation();
+  imagenAnterior();
+});
+btnNext.addEventListener("click", (e) => {
+  e.stopPropagation();
+  imagenSiguiente();
+});
 lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) {
-    cerrarLightbox();
-  }
+  if (e.target === lightbox) cerrarLightbox();
 });
