@@ -9,6 +9,13 @@
 
     <!-- Vinculación de hoja de estilos -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Íconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,9 +23,19 @@
     <main>
 
         <!-- Encabezado de la página -->
-        <header>
-            <h1>Galería con Lightbox</h1>
+        <header class="page-header">
+            <h1><i class="fas fa-gauge"></i> Galería de Autos</h1>
+            <p>Explora una selección de autos deportivos, clásicos y conceptuales</p>
         </header>
+
+        <!-- Banner principal -->
+        <section class="hero-banner">
+            <img src="assets/img/hero-car.jpg" alt="Carro destacado" />
+            <div class="hero-text">
+                <h2>Pasión por los motores</h2>
+                <p>Velocidad, diseño y potencia reunidos en una sola galería</p>
+            </div>
+        </section>
 
         <!-- Galería de imágenes -->
         <section class="galeria" aria-label="Galería de imágenes">
