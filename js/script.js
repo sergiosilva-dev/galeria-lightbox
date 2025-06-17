@@ -25,12 +25,6 @@ function mostrarLightbox(index) {
   lightbox.setAttribute("aria-hidden", "false");
 }
 
-function cerrarLightbox() {
-  lightbox.classList.remove("show");
-  lightboxImg.src = "";
-  lightbox.setAttribute("aria-hidden", "true");
-}
-
 // Navegar a imagen anterior
 function imagenAnterior() {
   indiceActual = (indiceActual - 1 + imagenes.length) % imagenes.length;
@@ -56,3 +50,37 @@ btnNext.addEventListener("click", (e) => {
 lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) cerrarLightbox();
 });
+
+// Accesibilidad con teclado
+document.addEventListener("keydown", (e) => {
+  if (!lightbox.classList.contains("show")) return;
+
+  switch (e.key) {
+    case "Escape":
+      cerrarLightbox();
+      break;
+    case "ArrowLeft":
+      imagenAnterior();
+      break;
+    case "ArrowRight":
+      imagenSiguiente();
+      break;
+  }
+});
+
+// Evitar scroll del fondo al abrir Lightbox
+function mostrarLightbox(index) {
+  indiceActual = index;
+  lightbox.classList.add("show");
+  lightboxImg.src = imagenes[index].src;
+  lightboxImg.alt = imagenes[index].alt;
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden"; // bloquea scroll fondo
+}
+
+function cerrarLightbox() {
+  lightbox.classList.remove("show");
+  lightboxImg.src = "";
+  lightbox.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = ""; // restaura scroll
+}
