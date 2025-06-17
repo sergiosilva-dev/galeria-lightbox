@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Galería interactiva con efecto Lightbox usando HTML, CSS y JavaScript" />
+    <title>Galería con Lightbox</title>
+
+    <!-- Vinculación de hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <main>
+
+        <!-- Encabezado de la página -->
+        <header>
+            <h1>Galería con Lightbox</h1>
+        </header>
+
+        <!-- Galería de imágenes -->
+        <section class="galeria" aria-label="Galería de imágenes">
+            <figure>
+                <img src="assets/img/car_1.jpg" alt="Descripción 1" />
+            </figure>
+            <figure>
+                <img src="assets/img/car_2.jpg" alt="Descripción 2" />
+            </figure>
+            <figure>
+                <img src="assets/img/car_3.jpg" alt="Descripción 3" />
+            </figure>
+            <!-- Agrega más imágenes aquí -->
+        </section>
+
+        <!-- Contenedor del Lightbox -->
+        <div class="lightbox" id="lightbox" aria-hidden="true">
+            <span class="close" id="btnClose" aria-label="Cerrar lightbox">&times;</span>
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Imagen ampliada" />
+        </div>
+
+    </main>
+
+    <!-- Vinculación de JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
