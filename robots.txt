@@ -1,0 +1,6 @@
+# Permitir a todos los motores de búsqueda indexar el sitio completo
+User-agent: *
+Allow: /
+
+# Enlace a tu sitemap para indexación más efectiva
+Sitemap: https://sergiosilva-dev.github.io/galeria-lightbox/sitemap.xml

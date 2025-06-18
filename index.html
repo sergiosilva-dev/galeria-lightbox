@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Galería interactiva con efecto Lightbox usando HTML, CSS y JavaScript" />
-    <title>Galería con Lightbox</title>
+    <!-- Metadata general -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="es">
+    <meta name="robots" content="index, follow">
+    <meta name="distibution" content="global">
+    <meta name="rating" content="general">
+    <meta name="author" content="Sergio Silva">
+    <meta name="creator" content="Sergio Silva">
+    <meta name="publisher" content="Sergio Silva">
+    <meta name="copyright" content="Sergio Silva">
+    <meta name="application-name" content="Galería de Autos | Sergio Silva">
+    <meta name="description"
+        content="Explora una galería moderna de autos deportivos, clásicos y conceptuales desarrollada por Sergio Silva con HTML, CSS y JavaScript.">
+    <meta name="keywords"
+        content="autos, galería web, autos deportivos, HTML, JavaScript, portafolio web, Sergio Silva">
+    <meta name="theme-color" content="#111111">
 
-    <!-- Favicon -->
+    <!-- SEO Title y Description -->
+    <title>Galería de Autos | Sergio Silva</title>
+    <meta name="description"
+        content="Explora una galería moderna de autos deportivos, clásicos y conceptuales desarrollada por Sergio Silva con HTML, CSS y JavaScript.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sergiosilva-dev.github.io/galeria-lightbox/">
+
+    <!-- Favicon y tema -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -15,30 +37,101 @@
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
     <meta name="theme-color" content="#111111">
 
-    <!-- Vinculación de hoja de estilos -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Open Graph (para redes sociales como Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Galería de Autos | Sergio Silva">
+    <meta property="og:description"
+        content="Explora autos deportivos y clásicos con efectos visuales modernos en esta galería web desarrollada por Sergio Silva.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sergiosilva-dev.github.io/galeria-lightbox/">
+    <meta property="og:image" content="https://sergiosilva-dev.github.io/galeria-lightbox/assets/img/preview.jpg">
+    <meta property="og:locale" content="es-CO">
 
-    <!-- Íconos Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galería de Autos | Sergio Silva">
+    <meta name="twitter:description"
+        content="Autos deportivos y clásicos con efectos visuales. Proyecto web por Sergio Silva.">
+    <meta name="twitter:image" content="https://sergiosilva-dev.github.io/galeria-lightbox/assets/img/preview.jpg">
+    <meta name="twitter:creator" content="@sergiosilva-dev">
 
-    <!-- Performance: Preconnect a Google Fonts si usas fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload / Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuente y hoja de estilos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins/latin-400.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Verificación de propiedad para Google Search Console -->
+    <meta name="google-site-verification" content="TU_CODIGO_UNICO_AQUI" />
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "WebSite",
+            "name": "Galería de Autos | Sergio Silva",
+            "url": "https://sergiosilva-dev.github.io/galeria-lightbox/",
+            "description": "Explora una galería interactiva de autos deportivos, clásicos y conceptuales desarrollada por Sergio Silva con HTML, CSS y JavaScript.",
+            "author": {
+                "@type": "Person",
+                "name": "Sergio Silva",
+                "url": "https://sergiosilva-dev.github.io",
+                "sameAs": [
+                "https://github.com/sergiosilva-dev",
+                "https://linkedin.com/in/sergioa-silvam"
+                ]
+            },
+            "inLanguage": "es-CO",
+            "keywords": [
+                "autos deportivos",
+                "galería web",
+                "proyecto HTML",
+                "portafolio Sergio Silva",
+                "galería interactiva",
+                "desarrollo web"
+            ]
+            },
+            {
+            "@type": "CreativeWork",
+            "name": "Galería de Autos",
+            "headline": "Galería interactiva con efectos Lightbox de autos deportivos y clásicos",
+            "creator": {
+                "@type": "Person",
+                "name": "Sergio Silva",
+                "url": "https://sergiosilva-dev.github.io"
+            },
+            "dateCreated": "2025-06-18",
+            "url": "https://sergiosilva-dev.github.io/galeria-lightbox/",
+            "inLanguage": "es-CO",
+            "description": "Este proyecto muestra una galería moderna de autos, desarrollada con HTML, CSS y JavaScript como parte del portafolio web de Sergio Silva.",
+            "keywords": [
+                "galería web",
+                "autos deportivos",
+                "HTML",
+                "JavaScript",
+                "portafolio",
+                "desarrollador web"
+            ]
+            }
+        ]
+        }
+    </script>
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <nav class="navbar" role="navigation">
             <div class="header-left">
                 <span class="logo"><i class="fa-solid fa-car"></i> Sergio Silva</span>
             </div>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#acerca">Acerca de</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul class="nav-links" id="nav-links" role="list">
+                <li role="listitem"><a href="#inicio" aria-current="page">Inicio</a></li>
+                <li role="listitem"><a href="#galeria">Galería</a></li>
+                <li role="listitem"><a href="#acerca">Acerca de</a></li>
+                <li role="listitem"><a href="#contacto">Contacto</a></li>
             </ul>
 
             <div class="header-right">
@@ -53,7 +146,7 @@
     </header>
 
     <!-- Contenedor principal -->
-    <main>
+    <main role="main" id="main-content">
         <!-- Bloque destacado con fondo variable según tema -->
         <section id="inicio" class="hero-section">
             <div class="hero-content">
@@ -123,14 +216,14 @@
         </div>
 
         <!-- Sección Acerca de -->
-        <section id="acerca">
+        <section id="acerca" aria-label="Acerca del sitio">
             <h2>Acerca de</h2>
             <p>Este proyecto fue creado por Sergio Silva como parte de su portafolio interactivo de desarrollo web.
                 Explora el diseño, interactividad y efectos visuales en una interfaz moderna.</p>
         </section>
 
         <!-- Sección de Contacto -->
-        <section id="contacto" class="seccion">
+        <section id="contacto" class="seccion" aria-label="Información de contacto">
             <h2>Contacto</h2>
             <p>Puedes encontrarme en:</p>
             <br>
@@ -144,7 +237,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <p>&copy; <span id="year"></span> Sergio Silva. Todos los derechos reservados.</p>
             <div class="footer-social">

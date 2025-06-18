@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://sergiosilva-dev.github.io/galeria-lightbox/</loc>
+        <lastmod>2025-06-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://sergiosilva-dev.github.io/galeria-lightbox/#galeria</loc>
+        <lastmod>2025-06-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sergiosilva-dev.github.io/galeria-lightbox/#acerca</loc>
+        <lastmod>2025-06-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://sergiosilva-dev.github.io/galeria-lightbox/#contacto</loc>
+        <lastmod>2025-06-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>
