@@ -62,6 +62,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins/latin-400.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
     <!-- Verificación de propiedad para Google Search Console -->
     <meta name="google-site-verification" content="TU_CODIGO_UNICO_AQUI" />
 
@@ -149,14 +152,14 @@
     <main role="main" id="main-content">
         <!-- Bloque destacado con fondo variable según tema -->
         <section id="inicio" class="hero-section">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-up">
                 <h1>Galería de Autos</h1>
                 <p>Una colección visual de autos deportivos, clásicos y conceptuales</p>
             </div>
         </section>
 
         <!-- Banner principal -->
-        <div class="hero-banner">
+        <div class="hero-banner" data-aos="zoom-in">
             <img src="assets/img/hero-car.jpg" alt="Imagen destacada de autos" />
             <div class="hero-text">
                 <h2>Pasión por los motores</h2>
@@ -168,41 +171,41 @@
         <section id="galeria" class="section-box" aria-label="Galería de autos">
             <h2>Galería</h2>
             <div class="galeria">
-                <figure>
-                    <img src="assets/img/car_1.jpg" alt="Lamborghini naranja en carretera forestal" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_1.jpg" alt="Lamborghini naranja en carretera forestal" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_2.jpg" alt="Dodge Charger gris de frente al atardecer" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_2.jpg" alt="Dodge Charger gris de frente al atardecer" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_3.jpg" alt="Ferrari negro estacionado en una calle urbana" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_3.jpg" alt="Ferrari negro estacionado en una calle urbana" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_4.jpg" alt="Audi plateado con luces encendidas en bosque otoñal" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_4.jpg" alt="Audi plateado con luces encendidas en bosque otoñal" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_5.jpg" alt="Mustang verde brillante en parqueadero curvo" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_5.jpg" alt="Mustang verde brillante en parqueadero curvo" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_6.jpg" alt="Corvette deportivo púrpura con cielo al atardecer" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_6.jpg" alt="Corvette deportivo púrpura con cielo al atardecer" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_7.jpg" alt="BMW gris con fondo de lago y montañas" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_7.jpg" alt="BMW gris con fondo de lago y montañas" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_8.jpg" alt="Mercedes-AMG GT negro en zona portuaria" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_8.jpg" alt="Mercedes-AMG GT negro en zona portuaria" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_9.jpg" alt="Porsche clásico blanco conduciendo entre árboles altos" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_9.jpg" alt="Porsche clásico blanco conduciendo entre árboles altos" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_10.jpg" alt="Auto de carreras con livery Martini visto desde arriba" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_10.jpg" alt="Auto de carreras con livery Martini visto desde arriba" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_11.jpg" alt="Sedán deportivo naranja bajo paso elevado al atardecer" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_11.jpg" alt="Sedán deportivo naranja bajo paso elevado al atardecer" loading="lazy"/>
                 </figure>
-                <figure>
-                    <img src="assets/img/car_12.jpg" alt="Nissan Skyline blanco en túnel moderno a alta velocidad" />
+                <figure data-aos="fade-up">
+                    <img src="assets/img/car_12.jpg" alt="Nissan Skyline blanco en túnel moderno a alta velocidad" loading="lazy"/>
                 </figure>
             </div>
         </section>
@@ -216,14 +219,14 @@
         </div>
 
         <!-- Sección Acerca de -->
-        <section id="acerca" aria-label="Acerca del sitio">
+        <section id="acerca" aria-label="Acerca del sitio" data-aos="fade-right">
             <h2>Acerca de</h2>
             <p>Este proyecto fue creado por Sergio Silva como parte de su portafolio interactivo de desarrollo web.
                 Explora el diseño, interactividad y efectos visuales en una interfaz moderna.</p>
         </section>
 
         <!-- Sección de Contacto -->
-        <section id="contacto" class="seccion" aria-label="Información de contacto">
+        <section id="contacto" class="seccion" aria-label="Información de contacto" data-aos="fade-left">
             <h2>Contacto</h2>
             <p>Puedes encontrarme en:</p>
             <br>
@@ -237,7 +240,7 @@
         </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer role="contentinfo" data-aos="fade-up">
         <div class="footer-content">
             <p>&copy; <span id="year"></span> Sergio Silva. Todos los derechos reservados.</p>
             <div class="footer-social">
@@ -256,6 +259,15 @@
 
     <!-- Vinculación de JavaScript -->
     <script src="js/script.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
