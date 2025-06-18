@@ -84,3 +84,6 @@ function cerrarLightbox() {
   lightbox.setAttribute("aria-hidden", "true");
   document.body.style.overflow = ""; // restaura scroll
 }
+
+// Año dinámico en el footer
+document.getElementById("year").textContent = new Date().getFullYear();
