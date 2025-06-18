@@ -87,3 +87,20 @@ function cerrarLightbox() {
 
 // Año dinámico en el footer
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Cambio de tema claro/oscuro
+const toggleBtn = document.getElementById("toggle-theme");
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  const icon = toggleBtn.querySelector("i");
+  icon.classList.toggle("fa-moon");
+  icon.classList.toggle("fa-sun");
+});
+
+// Hamburger menu
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.querySelector("nav ul");
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});

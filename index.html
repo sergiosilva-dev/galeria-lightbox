@@ -14,67 +14,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Performance: Preconnect a Google Fonts si usas fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 
 <body>
+    <header>
+        <nav class="navbar" role="navigation">
+            <div class="header-left">
+                <span class="logo"><i class="fa-solid fa-car"></i> Sergio Silva</span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="header-right">
+                <button id="toggle-theme" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
     <!-- Contenedor principal -->
     <main>
-
-        <!-- Encabezado de la página -->
-        <header class="clean-header">
-            <h1>Galería de Autos</h1>
-            <p>Una colección visual de autos deportivos, clásicos y conceptuales</p>
-        </header>
+        <!-- Bloque destacado con fondo variable según tema -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h1>Galería de Autos</h1>
+                <p>Una colección visual de autos deportivos, clásicos y conceptuales</p>
+            </div>
+        </section>
 
         <!-- Banner principal -->
-        <section class="hero-banner">
-            <img src="assets/img/hero-car.jpg" alt="Carro destacado" />
+        <div class="hero-banner">
+            <img src="assets/img/hero-car.jpg" alt="Imagen destacada de autos" />
             <div class="hero-text">
                 <h2>Pasión por los motores</h2>
                 <p>Velocidad, diseño y potencia reunidos en una sola galería</p>
             </div>
-        </section>
+        </div>
 
         <!-- Galería de imágenes -->
-        <section class="galeria" aria-label="Galería de autos">
-            <figure>
-                <img src="assets/img/car_1.jpg" alt="Lamborghini naranja en carretera forestal" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_2.jpg" alt="Dodge Charger gris de frente al atardecer" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_3.jpg" alt="Ferrari negro estacionado en una calle urbana" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_4.jpg" alt="Audi plateado con luces encendidas en bosque otoñal" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_5.jpg" alt="Mustang verde brillante en parqueadero curvo" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_6.jpg" alt="Corvette deportivo púrpura con cielo al atardecer" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_7.jpg" alt="BMW gris con fondo de lago y montañas" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_8.jpg" alt="Mercedes-AMG GT negro en zona portuaria" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_9.jpg" alt="Porsche clásico blanco conduciendo entre árboles altos" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_10.jpg" alt="Auto de carreras con livery Martini visto desde arriba" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_11.jpg" alt="Sedán deportivo naranja bajo paso elevado al atardecer" />
-            </figure>
-            <figure>
-                <img src="assets/img/car_12.jpg" alt="Nissan Skyline blanco en túnel moderno a alta velocidad" />
-            </figure>
+        <section id="galeria" class="section-box" aria-label="Galería de autos">
+            <h2>Galería</h2>
+            <div class="galeria">
+                <figure>
+                    <img src="assets/img/car_1.jpg" alt="Lamborghini naranja en carretera forestal" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_2.jpg" alt="Dodge Charger gris de frente al atardecer" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_3.jpg" alt="Ferrari negro estacionado en una calle urbana" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_4.jpg" alt="Audi plateado con luces encendidas en bosque otoñal" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_5.jpg" alt="Mustang verde brillante en parqueadero curvo" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_6.jpg" alt="Corvette deportivo púrpura con cielo al atardecer" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_7.jpg" alt="BMW gris con fondo de lago y montañas" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_8.jpg" alt="Mercedes-AMG GT negro en zona portuaria" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_9.jpg" alt="Porsche clásico blanco conduciendo entre árboles altos" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_10.jpg" alt="Auto de carreras con livery Martini visto desde arriba" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_11.jpg" alt="Sedán deportivo naranja bajo paso elevado al atardecer" />
+                </figure>
+                <figure>
+                    <img src="assets/img/car_12.jpg" alt="Nissan Skyline blanco en túnel moderno a alta velocidad" />
+                </figure>
+            </div>
         </section>
 
         <!-- Contenedor del Lightbox -->
@@ -85,9 +114,29 @@
             <button id="next" class="nav" aria-label="Imagen siguiente">⟩</button>
         </div>
 
+        <!-- Sección Acerca de -->
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>Este proyecto fue creado por Sergio Silva como parte de su portafolio interactivo de desarrollo web.
+                Explora el diseño, interactividad y efectos visuales en una interfaz moderna.</p>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p>Puedes encontrarme en:</p>
+            <br>
+            <ul class="contacto-lista">
+                <li><strong>Email:</strong> <a href="mailto:ssilva@updevelop.com">ssilva@updevelop.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/sergiosilva-dev"
+                        target="_blank">sergiosilva-dev</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sergioa-silvam"
+                        target="_blank">sergioa-silvam</a></li>
+            </ul>
+        </section>
     </main>
 
-    <footer class="site-footer">
+    <footer>
         <div class="footer-content">
             <p>&copy; <span id="year"></span> Sergio Silva. Todos los derechos reservados.</p>
             <div class="footer-social">
